@@ -137,7 +137,6 @@
             text-shadow: 0 0 15px var(--hawk-blood);
         }
 
-        /* Live Prophecy Tracker */
         .prophecy-monitor {
             background: black;
             border: 1px solid var(--mycelium-teal);
@@ -161,7 +160,6 @@
         }
 
         b { color: var(--knight-gold); }
-
     </style>
 </head>
 
@@ -227,21 +225,38 @@
     &copy; 3026 Bert Ward Codex | All Realities Reserved | Peck Responsibly | Built on iPad Pro (Disassembled)
 </footer>
 
+<!-- Floating Corn Portal -->
+<a href="index.html" style="
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: var(--corn-neon);
+    color: black;
+    padding: 15px 25px;
+    border-radius: 50px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 0 20px var(--corn-neon);
+    transition: 0.3s;
+    z-index: 9999;
+">
+    🌽 Return to Core
+</a>
+
 <script>
     // Dimensional Fluctuator Logic
     let dimension = 11.9992;
     const counterDisplay = document.getElementById('dimension-counter');
 
     setInterval(() => {
-        // Randomly fluctuate the dimension closer to 12
         dimension += (Math.random() - 0.4) * 0.0001;
         if (dimension >= 12.0) {
-            dimension = 11.9999; // The universe isn't ready yet!
+            dimension = 11.9999;
         }
         counterDisplay.innerText = dimension.toFixed(4);
     }, 500);
 
-    // Secret Console Lore
     console.log("%c [!] ALERT: ANTI-SORCERY GUILD DETECTED IN CONSOLE ", "background: red; color: white; font-weight: bold;");
     console.log("Bertwardian Encryption Active. Stay away from the bread bins.");
 </script>
