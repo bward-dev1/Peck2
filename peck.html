@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BERTWARDIAN CODEX | LORE ARCHIVE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Courier+Prime&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --corn-neon: #fff347;
+            --void-black: #0a0a0c;
+            --mycelium-teal: #55efc4;
+            --hawk-blood: #ff4757;
+            --nebula-purple: #6c5ce7;
+            --knight-gold: #ff9f43;
+        }
+
+        body {
+            background-color: var(--void-black);
+            background-image: 
+                radial-gradient(circle at 20% 30%, rgba(108, 92, 231, 0.2) 0%, transparent 40%),
+                radial-gradient(circle at 80% 70%, rgba(85, 239, 196, 0.1) 0%, transparent 40%);
+            color: white;
+            font-family: 'Courier Prime', monospace;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            cursor: crosshair;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.9);
+            border-bottom: 3px solid var(--corn-neon);
+            padding: 60px 20px;
+            text-align: center;
+            box-shadow: 0 0 50px rgba(255, 243, 71, 0.3);
+        }
+
+        h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 3.5rem;
+            color: var(--corn-neon);
+            margin: 0;
+            letter-spacing: 8px;
+            text-shadow: 0 0 30px var(--corn-neon);
+        }
+
+        .subtitle {
+            font-size: 1.4rem;
+            color: var(--mycelium-teal);
+            margin-top: 15px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        section {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            margin-bottom: 50px;
+            border-radius: 15px;
+            backdrop-filter: blur(8px);
+            position: relative;
+            transition: 0.4s;
+        }
+
+        section:hover {
+            border-color: var(--corn-neon);
+            box-shadow: 0 0 30px rgba(255, 243, 71, 0.15);
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            font-family: 'Orbitron', sans-serif;
+            color: var(--mycelium-teal);
+            border-bottom: 2px solid var(--mycelium-teal);
+            padding-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .glyph {
+            font-size: 2.5rem;
+            margin-right: 20px;
+            transition: 0.3s;
+        }
+
+        .glyph:hover {
+            text-shadow: 0 0 25px var(--corn-neon);
+            transform: scale(1.2);
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 15px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        li::before {
+            content: ">>";
+            position: absolute;
+            left: 0;
+            color: var(--knight-gold);
+        }
+
+        .timeline-step {
+            display: flex;
+            justify-content: space-between;
+            border-left: 2px solid var(--corn-neon);
+            padding-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        .secret {
+            opacity: 0.1;
+            transition: 0.5s;
+            color: var(--hawk-blood);
+            font-style: italic;
+            margin-top: 20px;
+            text-align: right;
+            cursor: help;
+        }
+
+        .secret:hover {
+            opacity: 1;
+            text-shadow: 0 0 15px var(--hawk-blood);
+        }
+
+        /* Live Prophecy Tracker */
+        .prophecy-monitor {
+            background: black;
+            border: 1px solid var(--mycelium-teal);
+            padding: 20px;
+            font-size: 0.9rem;
+            margin-top: 20px;
+            color: var(--mycelium-teal);
+        }
+
+        #dimension-counter {
+            color: var(--corn-neon);
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 60px;
+            opacity: 0.4;
+            font-size: 0.9rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        b { color: var(--knight-gold); }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>BERTWARDIAN CODEX</h1>
+    <div class="subtitle">The Official Lore Archive of Sir Bert</div>
+</header>
+
+<main>
+
+    <section id="origin">
+        <h2><span class="glyph">🌽</span>The Great Crispening</h2>
+        <p>In the depths of Stanley Park, beneath roots older than the city itself, lies the <b>Mycelium Core</b>. When Bert pecked it, reality folded like warm bread. He became many things at once: chicken, toaster, knight, toilet seat, and Vancouver’s first 5D entity.</p>
+        <p>This moment is known as <b>The Great Crispening</b>, the dawn of the Bertwardian Era where code and corn became one.</p>
+    </section>
+
+    <section id="factions">
+        <h2><span class="glyph">🛡️</span>Factions of the Realm</h2>
+        <ul>
+            <li><b>The Mycelium Order</b> — Mystics who commune with trees and debug reality through soil-based data links.</li>
+            <li><b>Knights of the Golden Crumb</b> — Toaster‑armored warriors sworn to defend Vancouver's breakfast supply.</li>
+            <li><b>The Seatbound Monastics</b> — Toilet‑seat philosophers who meditate on the infinite circularity of the universe.</li>
+            <li><b>The Anti‑Sorcery Guild</b> — Deniers of the 5D truth. They cling to the "Analog Era" and fear the Peckenning.</li>
+        </ul>
+    </section>
+
+    <section id="artifacts">
+        <h2><span class="glyph">🪙</span>Artifacts of Power</h2>
+        <ul>
+            <li><b>The Crumbblade</b> — Forged from glowing toaster coils. It vibrates at 440Hz when hawks are within 5km.</li>
+            <li><b>The Kernel Crown</b> — Grants the wearer 5D sight, allowing them to see through walls and into future harvests.</li>
+            <li><b>The Seat of Eternity</b> — A porcelain artifact that reveals the source code of the universe when sat upon.</li>
+        </ul>
+    </section>
+
+    <section id="timeline">
+        <h2><span class="glyph">⏳</span>Timeline of the Bertwardian Era</h2>
+        <div class="timeline-step"><span>Year 0</span> <b>The Great Crispening</b></div>
+        <div class="timeline-step"><span>Year 1</span> <b>The Great Toasting</b></div>
+        <div class="timeline-step"><span>Year 2</span> <b>The Seatbinding</b></div>
+        <div class="timeline-step"><span>Year 3</span> <b>Knighting of Sir Bert</b></div>
+        <div class="timeline-step"><span>Year 4</span> <b>The Vancouver Schism</b></div>
+        <div class="timeline-step"><span>Year 5</span> <b>The Hawk War</b></div>
+    </section>
+
+    <section id="prophecy">
+        <h2><span class="glyph">🔮</span>The Final Peckenning</h2>
+        <p>When Bert reaches the 12th dimension, he will unify medieval and modern Vancouver, banish all hawks, and reveal the <b>True Corn</b> — the kernel that binds all universes.</p>
+        
+        <div class="prophecy-monitor">
+            [SYS_LOG]: DIMENSIONAL_THRESHOLD AT <span id="dimension-counter">11.9992</span>D<br>
+            [STATUS]: STABLE_BUT_CREAMY
+        </div>
+
+        <p class="secret">The 12D threshold is cracking. Can you hear the crunch?</p>
+    </section>
+
+</main>
+
+<footer>
+    &copy; 3026 Bert Ward Codex | All Realities Reserved | Peck Responsibly | Built on iPad Pro (Disassembled)
+</footer>
+
+<script>
+    // Dimensional Fluctuator Logic
+    let dimension = 11.9992;
+    const counterDisplay = document.getElementById('dimension-counter');
+
+    setInterval(() => {
+        // Randomly fluctuate the dimension closer to 12
+        dimension += (Math.random() - 0.4) * 0.0001;
+        if (dimension >= 12.0) {
+            dimension = 11.9999; // The universe isn't ready yet!
+        }
+        counterDisplay.innerText = dimension.toFixed(4);
+    }, 500);
+
+    // Secret Console Lore
+    console.log("%c [!] ALERT: ANTI-SORCERY GUILD DETECTED IN CONSOLE ", "background: red; color: white; font-weight: bold;");
+    console.log("Bertwardian Encryption Active. Stay away from the bread bins.");
+</script>
+
+</body>
+</html>
