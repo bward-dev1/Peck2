@@ -28,7 +28,6 @@
             cursor: crosshair;
         }
 
-        /* --- THE SINGULARITY HEADER --- */
         header {
             background: rgba(0, 0, 0, 0.8);
             border-bottom: 2px solid var(--corn-neon);
@@ -53,7 +52,6 @@
             text-transform: uppercase;
         }
 
-        /* --- LAYOUT --- */
         main {
             max-width: 1000px;
             margin: 40px auto;
@@ -82,7 +80,6 @@
             padding-bottom: 10px;
         }
 
-        /* --- INTERACTIVE SINGULARITY --- */
         .singularity-box {
             display: flex;
             flex-direction: column;
@@ -116,7 +113,6 @@
             transform: scale(0.8);
         }
 
-        /* --- THE LOG TERMINAL --- */
         .terminal {
             background: #000;
             color: #0f0;
@@ -129,7 +125,6 @@
             margin-top: 20px;
         }
 
-        /* --- STATS GRID --- */
         .stats-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -152,7 +147,6 @@
             margin-top: 5px;
         }
 
-        /* --- HAWK ALERT --- */
         .hawk-overlay {
             position: fixed;
             top: 0;
@@ -172,10 +166,11 @@
         }
 
         @keyframes flash {
-            0% { opacity: 1; } 50% { opacity: 0.5; } 100% { opacity: 1; }
+            0% { opacity: 1; } 
+            50% { opacity: 0.5; } 
+            100% { opacity: 1; }
         }
 
-        /* --- FOOTER --- */
         footer {
             text-align: center;
             padding: 50px;
@@ -189,6 +184,34 @@
             color: #ff9f43;
             border-radius: 5px;
             overflow-x: auto;
+        }
+
+        /* ⭐ DIMENSIONAL PORTAL BUTTON ⭐ */
+        .portal {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            background: var(--corn-neon);
+            color: black;
+            padding: 18px 28px;
+            border-radius: 50px;
+            font-family: 'Orbitron', sans-serif;
+            font-weight: bold;
+            text-decoration: none;
+            box-shadow: 0 0 25px var(--corn-neon);
+            transition: 0.3s;
+            z-index: 9999;
+            animation: portalPulse 2.5s infinite ease-in-out;
+        }
+
+        @keyframes portalPulse {
+            0%, 100% { transform: scale(1); box-shadow: 0 0 25px var(--corn-neon); }
+            50% { transform: scale(1.15); box-shadow: 0 0 45px var(--nebula-purple); }
+        }
+
+        .portal:hover {
+            transform: scale(1.2);
+            box-shadow: 0 0 50px var(--mycelium-teal);
         }
 
     </style>
@@ -264,6 +287,9 @@ def transcend_reality(input_corn):
         &copy; 3026 Bert Ward | Powered by Solar Winds and Mycelium | Do not eat the developer.
     </footer>
 
+    <!-- ⭐ DIMENSIONAL PORTAL TO LORE PAGE ⭐ -->
+    <a href="peck.html" class="portal">🌽 Enter the Codex</a>
+
     <script>
         const term = document.getElementById('termOut');
         const overlay = document.getElementById('hawkOverlay');
@@ -280,17 +306,14 @@ def transcend_reality(input_corn):
         ];
 
         function handlePeck() {
-            // Log Update
             const msg = bawkLogs[Math.floor(Math.random() * bawkLogs.length)];
             term.innerHTML += `> BAWK! ${msg}<br>`;
             term.scrollTop = term.scrollHeight;
 
-            // Random Chance of Hawk
             if (Math.random() > 0.95) {
                 triggerHawk();
             }
 
-            // Stat updates
             document.getElementById('dimVal').innerText = Math.floor(Math.random() * 12) + "D";
         }
 
@@ -301,7 +324,6 @@ def transcend_reality(input_corn):
             }, 1500);
         }
 
-        // Background Pecking
         setInterval(() => {
             if(Math.random() > 0.8) handlePeck();
         }, 5000);
